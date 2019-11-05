@@ -8,7 +8,7 @@ yum install -y gcc gcc-c++ ruby ruby-devel lua lua-devel  \
     
 # update git
 yum remove -y git
-yum groupinstall "Development Tools"
+yum groupinstall -y "Development Tools"
 yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 yum install -y git2u-all
