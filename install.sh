@@ -7,11 +7,11 @@ yum install -y gcc gcc-c++ ruby ruby-devel lua lua-devel  \
     perl-ExtUtils-Embed
     
 # update git
-yum remove git
+yum remove -y git
 yum groupinstall "Development Tools"
-yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
-yum install https://centos7.iuscommunity.org/ius-release.rpm
-yum install git2u-all
+yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
+yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+yum install -y git2u-all
 
 wget https://github.com/vim/vim/archive/v8.1.2251.tar.gz
 cd vim-8.1.2251
@@ -42,7 +42,7 @@ git clone git://github.com/SirVer/ultisnips.git ~/.vim/bundle/ultisnips
 git clone git://github.com/honza/vim-snippets.git ~/.vim/bundle/vim-snippets
 
 # YCM
-yum install python-devel
+yum install -y python-devel
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
@@ -57,7 +57,8 @@ git clone https://github.com/Townk/vim-autoclose.git  ~/.vim/bundle/vim-autoclos
 # fugitive
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 
-
+# vimrc
+cp  -f .vimrc ~/
 
 
 
