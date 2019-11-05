@@ -27,6 +27,9 @@ cd vim-8.1.2251
 make && make install
 ln -s /usr/bin/vim /usr/local/bin/vim
 
+# vimrc
+cp -f .vimrc ~/
+
 # pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -58,9 +61,6 @@ git clone https://github.com/Townk/vim-autoclose.git  ~/.vim/bundle/vim-autoclos
 
 # fugitive
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
-
-# vimrc
-cp  -f .vimrc ~/
 
 
 
