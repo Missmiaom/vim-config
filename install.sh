@@ -46,6 +46,8 @@ yum install -y python-devel
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
+mkdir -p ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
+cp -f libclang-9.0.0-x86_64-unknown-linux-gnu.tar.bz2 ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
 ./install.sh --clang-completer
 
 # airline
