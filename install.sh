@@ -13,6 +13,9 @@ yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 yum install -y git2u-all
 
+# vimrc
+cp -f .vimrc ~/
+
 tar -xzf vim-8.1.2251.tar.gz
 cd vim-8.1.2251
 ./configure --with-features=huge \
@@ -26,9 +29,6 @@ cd vim-8.1.2251
             --prefix=/usr/local
 make && make install
 ln -s /usr/bin/vim /usr/local/bin/vim
-
-# vimrc
-cp -f .vimrc ~/
 
 # pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
