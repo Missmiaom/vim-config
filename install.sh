@@ -13,7 +13,7 @@ yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 yum install -y git2u-all
 
-wget https://github.com/vim/vim/archive/v8.1.2251.tar.gz
+tar -xzf vim-8.1.2251.tar.gz
 cd vim-8.1.2251
 ./configure --with-features=huge \
             --enable-multibyte \
