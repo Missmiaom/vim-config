@@ -1,3 +1,13 @@
+set number
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" 110列超长提示
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
+
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -37,4 +47,5 @@ let g:ycm_key_list_previous_completion=[]
 " YCM end
 
 " airline start
+let g:airline_theme='deus'
 " airline end
